@@ -6,7 +6,7 @@ import homeRouter from './rest/home.js';
 import accountRouter from './rest/account.js';
 // import devicesRouter from './rest/devices.js';
 import deviceRouter from './rest/device.js';
-// import forumRouter from './rest/forum.js';
+import forumRouter from './rest/forum.js';
 import registerRouter from "./rest/register.js";
 import loginRouter from './rest/login.js';
 
@@ -26,7 +26,7 @@ app.use("/register", registerRouter)
 app.use("/account", accountRouter);
 // app.use("/devices", devicesRouter);
 app.use("/device", deviceRouter);
-// app.use("/forum", forumRouter);
+app.use("/forum", forumRouter);
 
 app.listen(3000, () => { console.log("Started listening to the port 3000.") })
 
