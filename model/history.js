@@ -7,4 +7,4 @@ const historyData = new mongoose.Schema({
 
 const History = mongoose.model('History', historyData);
 
-module.exports = History;
+export default History;
