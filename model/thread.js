@@ -10,4 +10,4 @@ const threadData = new mongoose.Schema({
 
 const Comment = mongoose.model('Thread', threadData);
 
-module.exports = Comment;
+export default Comment;

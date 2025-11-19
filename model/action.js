@@ -7,4 +7,4 @@ const actionData = new mongoose.Schema({
 
 const Action = mongoose.model('Action', actionData);
 
-module.exports = Action;
+export default Action;
