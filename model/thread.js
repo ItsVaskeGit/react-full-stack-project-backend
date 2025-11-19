@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const threadData = new mongoose.Schema({
+    name: String,
     startDate: Date,
     startedBy: {type: mongoose.Types.ObjectId, ref: 'User'},
     active: Boolean,
